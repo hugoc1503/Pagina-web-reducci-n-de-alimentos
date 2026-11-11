@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Realizar pedido | Helping Food
+  </title>
+  <link href="css/styles.css" rel="stylesheet"/>
+  <script defer="" src="js/app.js">
+  </script>
+ </head>
+ <body>
+  <header class="site-header">
+   <a class="brand" href="index.html">
+    <span class="brand-mark">
+     HF
+    </span>
+    <span>
+     Helping
+     <span class="brand-accent">
+      Food
+     </span>
+    </span>
+   </a>
+   <nav class="nav">
+    <a href="index.html">
+     Inicio
+    </a>
+    <a href="menu.html">
+     Explorar alimentos
+    </a>
+    <a href="ofertas.html">
+     Ofertas
+    </a>
+    <a href="pedidos.html">
+     Mis pedidos
+    </a>
+   </nav>
+  </header>
+  <main class="form-page">
+   <section class="form-panel">
+    <span class="eyebrow">
+     UN &Uacute;LTIMO PASO
+    </span>
+    <h1>
+     Completa tu pedido
+    </h1>
+    <p class="form-intro">
+     Ingresa tus datos y revisa el resumen antes de registrar.
+    </p>
+    <form class="form-grid" id="order-form">
+     <label>
+      Nombre completo
+      <input autocomplete="name" id="customer-name" maxlength="80" name="name" placeholder="Ej. Mar&iacute;a P&eacute;rez" required=""/>
+     </label>
+     <label>
+      Direcci&oacute;n de referencia
+      <input autocomplete="street-address" id="customer-address" maxlength="120" name="address" placeholder="Av. / calle y referencia" required=""/>
+     </label>
+     <label>
+      Tel&eacute;fono
+      <input id="customer-phone" inputmode="numeric" name="phone" pattern="[0-9 +()-]{7,18}" placeholder="Tu n&uacute;mero de contacto" required="" type="tel"/>
+     </label>
+     <label>
+      Producto
+      <select id="product-select" name="product" required="">
+      </select>
+     </label>
+     <label>
+      Cantidad
+      <input id="product-quantity" max="20" min="1" name="quantity" required="" type="number" value="1"/>
+     </label>
+     <div class="total-box">
+      <span>
+       Total estimado
+      </span>
+      <strong id="order-total">
+       S/ 0.00
+      </strong>
+     </div>
+     <p class="form-note">
+      Demostraci&oacute;n acad&eacute;mica: el pedido se guarda &uacute;nicamente en este navegador. No se realiza ning&uacute;n cobro ni env&iacute;o real.
+     </p>
+     <button class="btn btn-primary btn-full" type="submit">
+      Registrar pedido
+     </button>
+     <a class="text-link centered" href="menu.html">
+      &larr; Volver al men&uacute;
+     </a>
+    </form>
+   </section>
+  </main>
+  <footer class="footer">
+   <small>
+    &copy; 2026 Helping Food &middot; Proyecto acad&eacute;mico
+   </small>
+  </footer>
+ </body>
+</html>
